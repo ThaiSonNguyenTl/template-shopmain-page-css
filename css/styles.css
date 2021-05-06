@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('../fonts/SourceSansPro-Light.ttf');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat-ultra-light';
+    src: url('../fonts/montserrat-ultra-light.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+.container {
+    width: 1170px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f6f7;
+    height: 52px;
+}
+
+.nav-top {
+    height: 52px;
+    color: #5f727f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: SourceSansPro-Regular;
+    font-size: 14px;
+}
+
+.head-phone {
+    margin-right: 13px;
+}
+
+.number-phone {
+    transform: translateX(-29px);
+    padding-bottom: 4px;
+}
+
+.social-icons {
+    list-style-type: none;
+    margin-right: 95px;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 11px;
+}
+
+.direction-item {
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    margin-right: 50px;
+}
+
+.direction-item img {
+    height: 10px;
+}
+
+.direction-item>li {
+    margin-right: 23px;
+}
+
+.btn-wish-list button {
+    width: 101px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #494c64;
+    border-radius: 4px;
+}
+
+.header-top {
+    font-family: Montserrat-Bold;
+    background-color: #ffffff;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3c3950
+}
+
+.brand {
+    font-size: 27px;
+}
+
+.text-brand {
+    transform: translateX(-19px);
+    font-size: 27px;
+}
+
+.header-navigation {
+    list-style-type: none;
+    display: flex;
+    font-size: 14px;
+}
+
+.header-navigation>li {
+    margin-left: 47px;
+}
+
+.header-navigation>li>a {
+    text-decoration: none;
+    color: #3c3950
+}
+
+.flag-card {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.flag-card>li {
+    margin-left: 21px;
+}
+
+.tag-box {
+    position: relative;
+    transform: translateX(-19px);
+    margin-top: 13px;
+}
+
+.tag-box img {
+    width: 30px;
+    height: 30px;
+}
+
+.number-product {
+    font-size: 14px;
+    color: #f4fbfc;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.banner {
+    background-color: #5f727f;
+    height: 397px;
+}
+
+
+/* Mobile: width < 740px
+    Tablet: 740<= width < 1024px 
+    Destop: width >= 1024
+*/
+
+
+/* mobile */
+
+@media only screen and (max-width: 739px) {}
+
+
+/* mobile and tablet  */
+
+@media only screen and (max-width: 1023px) {}
+
+
+/* tablet */
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {}
+
+@media only screen and (min-width: 1024px) {}
