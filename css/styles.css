@@ -23,25 +23,21 @@
     src: url('../fonts/Montserrat-Bold.ttf');
 }
 
-.container {
-    width: 1170px;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
+.nav-top {
     background-color: #f4f6f7;
     height: 52px;
+    font-family: SourceSansPro-Regular;
+    font-size: 14px;
+    color: #5f727f;
+    display: flex;
+    justify-content: center;
 }
 
-.nav-top {
-    height: 52px;
-    color: #5f727f;
+.area-content-display {
+    width: 1170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: SourceSansPro-Regular;
-    font-size: 14px;
 }
 
 .head-phone {
@@ -50,7 +46,7 @@
 
 .number-phone {
     transform: translateX(-29px);
-    padding-bottom: 4px;
+    padding-bottom: 5px;
 }
 
 .social-icons {
@@ -88,12 +84,10 @@
 
 .header-top {
     font-family: Montserrat-Bold;
-    background-color: #ffffff;
     height: 96px;
+    color: #3c3950;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #3c3950
+    justify-content: center;
 }
 
 .brand {
@@ -150,8 +144,23 @@
 }
 
 .banner {
-    background-color: #5f727f;
+    background-image: linear-gradient(to bottom right, #85365b, #77889e);
     height: 397px;
+    position: relative;
+}
+
+.text-banner {
+    font-size: 100px;
+    color: #ffffff;
+    font-family: montserrat-ultra-light;
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+}
+
+.text-banner span {
+    font-family: Montserrat-Bold;
 }
 
 
