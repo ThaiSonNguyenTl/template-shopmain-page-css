@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>Shop Main</title>
 </head>
 
@@ -145,12 +146,102 @@
                     </ul>
                 </div>
             </div>
-            <button class="btn-next">
-                <img src="./img/arrow next.png">
-            </button>
-            <button class="btn-prev">
-                <img src="./img/arrow prev.png">
-            </button>
+            <div class="btn-direction">
+                <button class="btn-next">
+                    <img src="./img/arrow next.png">
+                </button>
+                <button class="btn-prev">
+                    <img src="./img/arrow prev.png">
+                </button>
+            </div>
+        </div>
+        <div class="main-product">
+            <div class="area-content-display row">
+                <div class="sidebar">
+                    <p class="title-ctg"> CATEGORIES <img src="./img/levels.png" alt=""> </p>
+                    <div class="sidebar-category">
+                        <a href="#"> VERSION <i class="fas fa-chevron-right fl-right"></i></a>
+                        <a href="#"> LOREM IPSUM</a>
+
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn"> PROIN <i class="fas fa-chevron-right fl-right"></i>  </a>
+                            <div class="dropdown-content">
+                                <a href="#"> <i class="fas fa-square"></i>July 2015 <i class="fas fa-chevron-right fl-right"></i></a>
+                                <a href="#"> <i class="fas fa-square"></i>January 2013 <i class="fas fa-chevron-right fl-right"></i></a>
+                                <a href="#"><i class="fas fa-square"></i>March 2012 <i class="fas fa-chevron-right fl-right"></i></a>
+                                <div class="child-dropdown">
+                                    <a href="#" class="drop-btn"><i class="fas fa-square"></i>January 2012 <i class="fas fa-chevron-right fl-right"></i></a>
+                                    <div class="child-content">
+                                        <a href="#"> <i class="fas fa-square"></i>July 2015 <i class="fas fa-chevron-right fl-right"></i></a>
+                                        <a href="#"> <i class="fas fa-square"></i>January 2013 <i class="fas fa-chevron-right fl-right"></i></a>
+                                        <a href="#"><i class="fas fa-square"></i>March 2012 <i class="fas fa-chevron-right fl-right"></i></a>
+                                        <a href="#"><i class="fas fa-square"></i>January 2012 <i class="fas fa-chevron-right fl-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"> GRAVIDA <i class="fas fa-chevron-right fl-right"></i> </a>
+                        <a href="#"> NIBH VEL VELIT <i class="fas fa-chevron-right fl-right"></i> </a>
+                        <a href="#"> AUCTOR </a>
+                        <a href="#"> ALIQUET <i class="fas fa-chevron-right fl-right"></i> </a>
+                        <a href="#"> AENEAN  </a>
+                    </div>
+                    <form class="search-box">
+                        <input type="text" class="mySearch" placeholder="Search for products...">
+                        <i class="fas fa-search search-icon"></i>
+                    </form>
+                    <p class="title-ctg"> FILTER BY PRICE <img src="./img/levels.png" alt=""> </p>
+                    <div class="filter-price">
+                        <div class="myProgress"></div>
+                        <i class="fas fa-circle circle-icon-start"></i>
+                        <i class="fas fa-circle circle-icon-end"></i>
+                    </div>
+                    <div class="btn-filter-box">
+                        <button class="btn-filter">FILTER</button>
+                        <p class="text-price">Price: <span> $345 - $1640</span></p>
+                    </div>
+
+                </div>
+
+                <ul class="product-lists">
+                    <li class="product-item">
+                        <div class="product-infor">
+                            <p class="product-name">SALES</p>
+                            <p class="iventory">9 items</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="product-infor">
+                            <p class="product-name">DRESSES</p>
+                            <p class="iventory">19 items</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="product-infor">
+                            <p class="product-name">LINGERIE</p>
+                            <p class="iventory">9 items</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="product-infor">
+                            <p class="product-name">SHIRTS</p>
+                            <p class="iventory">9 items</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="product-infor">
+                            <p class="product-name">ACCESSORIES</p>
+                            <p class="iventory">19 items</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="product-infor">
+                            <p class="product-name">BAGS</p>
+                            <p class="iventory">5 items</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
