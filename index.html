@@ -73,7 +73,8 @@
                 </div>
             </div>
         </div>
-        <div class="header-top display-flex-center">
+        <!-- Pc -->
+        <nav class="header-top display-flex-center">
             <div class="area-content-display type-display">
                 <ul class="brand">
                     <li>
@@ -123,8 +124,54 @@
                         </div>
                     </li>
                 </ul>
+                <!-- mobile -->
+                <label for="nav-mobile-input" class="btn-bar-tablet">
+                    <i class="fas fa-bars"></i>
+                </label>
             </div>
-        </div>
+        </nav>
+        <!-- mobile -->
+        <input type="checkbox" hidden class="nav-check" id="nav-mobile-input">
+        <label for="nav-mobile-input" class="overlay"></label>
+        <nav class="header-mobile font-fm-monb">
+            <label for="nav-mobile-input" class="btn-nav-close-mb"><i class="fas fa-times"></i></label>
+            <ul class="nav-mobile-lists">
+                <li>
+                    <a class="nav-link-mobile" href="#">HOME <i class="fas fa-chevron-right fl-right"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link-mobile" href="#">PAGES <i class="fas fa-chevron-right fl-right"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link-mobile" href="#">BLOG <i class="fas fa-chevron-right fl-right"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link-mobile" href="#">PORTFOLIOS <i class="fas fa-chevron-right fl-right"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link-mobile" href="#">SHOP <i class="fas fa-chevron-right fl-right"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link-mobile" href="#">FEATURES <i class="fas fa-chevron-right fl-right"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link-mobile" href="#">ELEMENTS <i class="fas fa-chevron-right fl-right"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link-mobile" href="">
+                        <img src="./img/united-kingdom.png" alt=""> <i class="fas fa-chevron-right fl-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <form class="nav-form-mobile">
+                        <input type="text" class="mySearch" placeholder="Search for products...">
+                        <i class="fas fa-search search-icon"></i>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <!--  -->
+        <!-- pc -->
         <div class="banner display-flex-center">
             <div class="area-content-display">
                 <div class="description-banner">
@@ -843,8 +890,8 @@
                                 <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                             </div>
                             <div class="btn-latest">
-                                <div><i class="fas fa-share-alt"></i></div>
-                                <div><button class="font-fm-monb">READ MORE </button></div>
+                                <button class="btn-share"> <i class="fas fa-share-alt"></i></button>
+                                <button class="btn-readmore font-fm-monb">READ MORE </button>
                             </div>
                         </div>
                     </div>
@@ -865,8 +912,8 @@
                                 <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                             </div>
                             <div class="btn-latest">
-                                <div><i class="fas fa-share-alt"></i></div>
-                                <div><button class="font-fm-monb">READ MORE </button></div>
+                                <button class="btn-share"> <i class="fas fa-share-alt"></i></button>
+                                <button class="btn-readmore font-fm-monb">READ MORE </button>
                             </div>
                         </div>
                     </div>
@@ -887,8 +934,8 @@
                                 <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                             </div>
                             <div class="btn-latest">
-                                <div><i class="fas fa-share-alt"></i></div>
-                                <div><button class="font-fm-monb">READ MORE </button></div>
+                                <button class="btn-share"> <i class="fas fa-share-alt"></i></button>
+                                <button class="btn-readmore font-fm-monb">READ MORE </button>
                             </div>
                         </div>
                     </div>
@@ -909,8 +956,8 @@
                                 <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                             </div>
                             <div class="btn-latest">
-                                <div><i class="fas fa-share-alt"></i></div>
-                                <div><button class="font-fm-monb">READ MORE </button></div>
+                                <button class="btn-share"> <i class="fas fa-share-alt"></i></button>
+                                <button class="btn-readmore font-fm-monb">READ MORE </button>
                             </div>
                         </div>
                     </div>
@@ -1128,7 +1175,37 @@
             </div>
         </div>
         <!-- Footer -->
+        <div class="footer display-flex-center">
+            <!-- <div class="area-content-display">
+                <div class="logo-and-contact">
+                    <div class="logo">
+                        <div class="text-logo-brand">
+                            <img src="./img/logo.png" alt="">
+                            <p class="text-logo font-fm-monb"> <span class="font-fm-monUtraL"> THE</span> GEM
+                            </p>
+                        </div>
 
+                    </div>
+                    <div class="contact"></div>
+                </div>
+                <div class="footer-content-area">
+                    <div class="footer-content">
+                        <div class="footer-content-one">
+                            <div class="recent-post">
+                                <p class="text-footer font-fm-monb">TOP RATED PRODUCTS <img src="./img/levels.png" alt=""> </p>
+                            </div>
+                            <div class="email-us"></div>
+                            <div class="flickr-feed"></div>
+                        </div>
+                        <div class="footer-content-two">
+                            <div class="useful-link"></div>
+                            <div class="project-clients"></div>
+                            <div class="news-letter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
     </div>
 </body>
 

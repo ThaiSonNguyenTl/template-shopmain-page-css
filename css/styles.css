@@ -250,7 +250,8 @@ button {
     color: #3e3950
 }
 
-.title-ctg img {
+.title-ctg img,
+.text-footer img {
     transform: rotate(90deg);
     width: 9px;
     margin-left: 8px;
@@ -1036,10 +1037,6 @@ input:checked+.slider:before {
 
 /* LATEST NEWS */
 
-.color-icon {
-    color: #f44336
-}
-
 .title-latest-news {
     font-family: montserrat-ultra-light;
     font-size: 28px;
@@ -1062,15 +1059,15 @@ input:checked+.slider:before {
     width: 261px;
 }
 
-.content-latest {
-    background: #f0f3f2;
-    padding: 18px;
-}
-
 .img-latest {
     width: 100%;
     height: 188px;
     background: #dfe5e8;
+}
+
+.content-latest {
+    background: #f0f3f2;
+    padding: 18px;
 }
 
 .emotion {
@@ -1081,17 +1078,21 @@ input:checked+.slider:before {
     display: inline-block;
 }
 
+.by-author span {
+    color: #00bcd4;
+}
+
 .icon-cmt {
     float: right;
+}
+
+.color-icon {
+    color: #f44336;
 }
 
 .icon-cmt>span,
 .icon-cmt i {
     margin-right: 8px;
-}
-
-.by-author span {
-    color: #00bcd4;
 }
 
 .title-latest {
@@ -1103,29 +1104,25 @@ input:checked+.slider:before {
 .description-latest {
     margin-top: 42px;
     color: #83919a;
-    font-size: 16px;
 }
 
 .btn-latest {
-    display: flex;
     margin-top: 42px;
 }
 
-.btn-latest i {
+.btn-share {
     background-color: #b6c6c9;
     width: 30px;
     height: 30px;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #ffffff;
+    border: none;
 }
 
-.btn-latest button {
+.btn-readmore {
     cursor: pointer;
     border: 3px solid #00bcd4;
-    margin-left: 30px;
+    margin-left: 18px;
     width: 125px;
     height: 30px;
     color: #00bcd4;
@@ -1285,25 +1282,250 @@ input:checked+.slider:before {
 
 /* footer */
 
+.footer-margin-top {
+    margin-top: 48px;
+}
+
+.text-footer {
+    color: #feffff;
+    font-size: 19px;
+}
+
+.footer {
+    background-color: #212331;
+    height: 900px;
+    padding: 130px 0 96px;
+}
+
+
+/* .logo-and-contact {
+    width: 261px;
+    display: inline-block;
+    margin-right: 42px;
+}
+
+.footer-content-area {
+    float: right;
+    width: calc(100% - 303px);
+}
+
+.text-logo span {
+    color: #ffffff;
+}
+
+.text-logo-brand {
+    display: inline-block;
+}
+
+.text-logo {
+    display: inline-block;
+    align-items: center;
+    flex-direction: column; 
+    font-size: 38.67px;
+    color: #ffffff;
+} */
+
+
+/* Responsive */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
 
 /* Mobile: width < 740px
     Tablet: 740<= width < 1024px 
     Destop: width >= 1024
 */
 
+.btn-bar-tablet {
+    font-size: 30px;
+    color: #3c3950;
+    margin-right: 15px;
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 2;
+    animation: fadeIn linear 0.2s;
+}
+
+.header-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    max-width: 300px;
+    background: #ffff;
+    transform: translateX(100%);
+    z-index: 2;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+    opacity: 0;
+}
+
+.btn-nav-close-mb {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
+
+.nav-mobile-lists {
+    list-style-type: none;
+    margin-top: 64px;
+}
+
+.nav-mobile-lists li {
+    border-bottom: 1px solid #dfe5e8;
+    width: 100%;
+}
+
+.nav-mobile-lists li:hover {
+    color: #42c6da
+}
+
+.nav-mobile-lists a i {
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+.nav-form-mobile {
+    position: relative;
+    padding: 10px
+}
+
+.nav-form-mobile i {
+    font-size: 14px;
+}
+
+.nav-link-mobile {
+    text-decoration: none;
+    color: #3c3950;
+    line-height: 40px;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.nav-check:checked~.overlay {
+    display: block;
+}
+
+.nav-check:checked~.header-mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* mobile and tablet */
+
+@media only screen and (max-width: 1024px) {
+    .btn-bar-tablet {
+        display: block;
+    }
+    .header-navigation {
+        display: none;
+    }
+    .flag-card {
+        display: none;
+    }
+    .nav-top {
+        display: none;
+    }
+    .description-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description-banner ul {
+        text-align: center;
+    }
+    .text-banner {
+        font-size: 50px;
+    }
+    .text-direction-page {
+        position: absolute;
+        left: 10%;
+        bottom: 5%;
+    }
+    .brand {
+        margin-left: 14px;
+    }
+}
+
+
+/* tablet  */
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .text-banner-small {
+        font-size: 19px;
+    }
+    .btn-direction button {
+        width: 34px;
+        height: 34px;
+    }
+    .btn-direction img {
+        width: 12px;
+    }
+    .text-direction-page {
+        font-size: 15px;
+    }
+    .sidebar {
+        width: 30%;
+        margin-left: 20px;
+    }
+    .main-product {
+        width: calc(66.667% - 30px);
+        margin-right: 10px;
+    }
+    .product-item {
+        width: calc(50% - 15px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* mobile */
 
-@media only screen and (max-width: 739px) {}
+@media only screen and (max-width: 739px) {
+    .text-banner-small {
+        padding: 0 50px;
+        font-size: 15px;
+    }
+    .btn-direction button {
+        width: 20px;
+        height: 20px;
+    }
+    .btn-direction img {
+        width: 12px;
+    }
+    .text-direction-page {
+        font-size: 12px;
+    }
+}
 
 
-/* mobile and tablet  */
-
-@media only screen and (max-width: 1023px) {}
-
-
-/* tablet */
+/*  tablet */
 
 @media only screen and (min-width: 740px) and (max-width: 1023px) {}
-
-@media only screen and (min-width: 1024px) {}
