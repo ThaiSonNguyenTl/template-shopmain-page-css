@@ -126,7 +126,7 @@
                 </ul>
                 <!-- mobile -->
                 <label for="nav-mobile-input" class="btn-bar-tablet">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars size-bars"></i>
                 </label>
             </div>
         </nav>
@@ -134,7 +134,7 @@
         <input type="checkbox" hidden class="nav-check" id="nav-mobile-input">
         <label for="nav-mobile-input" class="overlay"></label>
         <nav class="header-mobile font-fm-monb">
-            <label for="nav-mobile-input" class="btn-nav-close-mb"><i class="fas fa-times"></i></label>
+            <label for="nav-mobile-input" class="btn-nav-close-mb"><i class="fas fa-times times-close"></i></label>
             <ul class="nav-mobile-lists">
                 <li>
                     <a class="nav-link-mobile" href="#">HOME <i class="fas fa-chevron-right fl-right"></i></a>
@@ -169,6 +169,97 @@
                     </form>
                 </li>
             </ul>
+            <!-- categorie sidebar in mobile -->
+            <div class="area-content-display hidden-tablet ">
+                <div class="sidebar ">
+                    <p class="title-ctg"> CATEGORIES <img src="./img/levels.png" alt=""> </p>
+                    <div class="sidebar-category">
+                        <a href="#"> VERSION <i class="fas fa-chevron-right fl-right"></i></a>
+                        <a href="#"> LOREM IPSUM</a>
+
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn"> PROIN <i class="fas fa-chevron-right fl-right"></i>  </a>
+                            <div class="dropdown-content">
+                                <a href="#"> <i class="fas fa-square"></i>July 2015 <i class="fas fa-chevron-right fl-right"></i></a>
+                                <a href="#"> <i class="fas fa-square"></i>January 2013 <i class="fas fa-chevron-right fl-right"></i></a>
+                                <a href="#"><i class="fas fa-square"></i>March 2012 <i class="fas fa-chevron-right fl-right"></i></a>
+                                <div class="child-dropdown">
+                                    <a href="#" class="drop-btn"><i class="fas fa-square"></i>January 2012 <i class="fas fa-chevron-right fl-right"></i></a>
+                                    <div class="child-content">
+                                        <a href="#"> <i class="fas fa-square"></i>July 2015 <i class="fas fa-chevron-right fl-right"></i></a>
+                                        <a href="#"> <i class="fas fa-square"></i>January 2013 <i class="fas fa-chevron-right fl-right"></i></a>
+                                        <a href="#"><i class="fas fa-square"></i>March 2012 <i class="fas fa-chevron-right fl-right"></i></a>
+                                        <a href="#"><i class="fas fa-square"></i>January 2012 <i class="fas fa-chevron-right fl-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"> GRAVIDA <i class="fas fa-chevron-right fl-right"></i> </a>
+                        <a href="#"> NIBH VEL VELIT <i class="fas fa-chevron-right fl-right"></i> </a>
+                        <a href="#"> AUCTOR </a>
+                        <a href="#"> ALIQUET <i class="fas fa-chevron-right fl-right"></i> </a>
+                        <a href="#"> AENEAN  </a>
+                    </div>
+
+                    <div class="filter-st">
+                        <div class="display-style">
+                            <p class="title-ctg"> FILTER BY PRICE <img src="./img/levels.png" alt=""> </p>
+                            <div class="filter-price">
+                                <div class="myProgress"></div>
+                                <i class="fas fa-circle circle-icon-start"></i>
+                                <i class="fas fa-circle circle-icon-end"></i>
+                            </div>
+                            <div class="btn-filter-box">
+                                <button class="btn-filter">FILTER</button>
+                                <p class="text-price">Price: <span> $345 - $1640</span></p>
+                            </div>
+                        </div>
+                        <div class="display-style">
+                            <p class="title-ctg"> FILTER BY COLOR <img src="./img/levels.png" alt=""> </p>
+                            <select class="style-select">
+                                <option>Any Color</option>
+                                <option>Red</option>
+                                <option>Yellow</option>
+                                <option>Violet</option>
+                            </select>
+                        </div>
+                        <div class="display-style">
+                            <p class="title-ctg"> FILTER BY PRICE <img src="./img/levels.png" alt=""> </p>
+                            <select class="style-select">
+                                <option>Any Size</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                            </select>
+                        </div>
+                        <div class="display-style">
+                            <p class="title-ctg"> PRODUCT TAGS <img src="./img/levels.png" alt=""> </p>
+                            <div class="prod-tags font-fm-sourceR">
+                                <span>morbi</span>
+                                <span>accumsan</span>
+                                <span>ipsum</span>
+                                <span>velit</span>
+                                <span>nam</span>
+                                <span>tellus</span>
+                                <span>aodio</span>
+                                <span>tincidunt</span>
+                                <span>auctor</span>
+                                <span>aornare odi</span>
+                                <span>morbi</span>
+                                <span>accumsan</span>
+                                <span>ipsum</span>
+                                <span>velit</span>
+                                <span>nam</span>
+                                <span>tellus</span>
+                                <span>aodio</span>
+                                <span>tincidunt</span>
+                                <span>auctor</span>
+                                <span>aornare odi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
         <!--  -->
         <!-- pc -->
@@ -206,8 +297,8 @@
         <div class="main-content display-flex-center">
             <div class="area-content-display">
                 <div class="sidebar">
-                    <p class="title-ctg"> CATEGORIES <img src="./img/levels.png" alt=""> </p>
-                    <div class="sidebar-category">
+                    <p class="title-ctg hidden-tag-mobile"> CATEGORIES <img src="./img/levels.png" alt=""> </p>
+                    <div class="sidebar-category hidden-tag-mobile">
                         <a href="#"> VERSION <i class="fas fa-chevron-right fl-right"></i></a>
                         <a href="#"> LOREM IPSUM</a>
 
@@ -234,11 +325,11 @@
                         <a href="#"> ALIQUET <i class="fas fa-chevron-right fl-right"></i> </a>
                         <a href="#"> AENEAN  </a>
                     </div>
-                    <form class="search-box">
+                    <form class="search-box hidden-tag-mobile">
                         <input type="text" class="mySearch" placeholder="Search for products...">
                         <i class="fas fa-search search-icon"></i>
                     </form>
-                    <div class="filter-st">
+                    <div class="filter-st hidden-tag-mobile">
                         <div class="display-style">
                             <p class="title-ctg"> FILTER BY PRICE <img src="./img/levels.png" alt=""> </p>
                             <div class="filter-price">
@@ -270,7 +361,7 @@
                             </select>
                         </div>
                         <!-- recent product viewed -->
-                        <div class="display-style">
+                        <div class="display-style show-mobile">
                             <p class="title-ctg">RECENTLY VIEWED <img src="./img/levels.png" alt=""> </p>
                             <div class="recently-view-product">
                                 <div class="product-viewed">
@@ -341,7 +432,7 @@
                             </div>
                         </div>
                         <!-- featured products -->
-                        <div class="display-style">
+                        <div class="display-style show-mobile">
                             <p class="title-ctg">FEATURED PRODUCTS <img src="./img/levels.png" alt=""> </p>
                             <div class="featured-product-box">
                                 <div class="product-featured">
@@ -373,7 +464,7 @@
                         </div>
                     </div>
                     <!-- ads coupon -->
-                    <div class="ads-coupon">
+                    <div class="ads-coupon hidden-tag-mobile">
                         <div class="border-white">
                             <div class="ads-coupon-content">
                                 <div class="color-text font-fm-monb">
